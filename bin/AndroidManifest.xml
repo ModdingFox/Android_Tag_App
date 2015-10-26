@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.FoxTek.Tagg"
+    android:versionCode="15"
+    android:versionName="5.2" >
+
+    <uses-permission android:name="android.premission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name="com.FoxTek.Tagg.TaggService" >
+            <intent-filter>
+                <action android:name=".TaggService.BIND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.FoxTek.Tagg.BootReciver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.FoxTek.Tagg.UpdateReciver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.FoxTek.Tagg.BlutoothReciever" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.FoxTek.Tagg.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.FoxTek.Tagg.Scan"
+            android:label="Scan" >
+        </activity>
+        <activity
+            android:name="com.FoxTek.Tagg.Settings"
+            android:label="Settings" >
+        </activity>
+        <activity
+            android:name="com.FoxTek.Tagg.About"
+            android:label="About" >
+        </activity>
+        <activity
+            android:name="com.FoxTek.Tagg.ServerAdmin"
+            android:label="Server Admin" >
+        </activity>
+        <activity
+            android:name="com.FoxTek.Tagg.FileSelector"
+            android:label="Mp3 Selector" >
+        </activity>
+        <activity
+            android:name="com.FoxTek.Tagg.RingToneSelector"
+            android:label="RingTone Selector" >
+        </activity>
+    </application>
+
+</manifest>

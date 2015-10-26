@@ -1,0 +1,45 @@
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/serveraddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: None"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:footerDividersEnabled="true"
+                android:visibility="visible" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan (0 ) (0 )"
+                android:id="@+id/button"
+                android:layout_gravity="left|center_vertical"
+                android:onClick="Scan"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag!"
+                android:onClick="Tag"
+                android:visibility="gone"
+                android:enabled="true" />
+
+        </LinearLayout>
+    </ScrollView>

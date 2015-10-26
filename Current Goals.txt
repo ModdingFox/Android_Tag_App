@@ -1,0 +1,62 @@
+Tag-back Count Tracking(Need To send byte to server saying a scan it occuring the server will then check when the last player device status updates of the players occured and determine if a tag back needs to be incremented the server will only do this once in a time out period by setting the new update once the expired btupdate is found)
+Support For Different Game Settings On A Server By Server Basis(need to define the number of settings total and use bitshifting to compact the data. also need to create a  function to decode the bits to return a boolean for if the server allows the setting, a conditional statement can allow or dissallow the function that the setting controls to run)
+
+Dramatically Reduced Battery Usage(not sure how im going to pull this one off???!!!!???)
+A More Stable UI(Debugging Debugging Debugging!!!!!!!!!!!!!!!)
+
+Stoe Listing:
+Play a game of Bluetooth tag.
+
+The server keeps track of the [player/players] who are it and the Bluetooth adapter in your phone is the "contact" between players.
+
+Instructions If You Are Hosting The Game:
+Open the app switch to the "About" tab
+Select "Included Tagg Server V 0.2.9(Beta)"
+Plug your phone into you computer
+Open your sdcard there should be a copy of the server "Tagg_Server.exe" copy this to your computer
+Run Tagg_Server.exe on your computer
+
+On the first time run of the Tagg Server you will be asked for
+If AutoScan can be used
+If Scan Detect can be used
+If TagBacks Are Allowed
+If the server supports GPS for faster BlueTooth scans
+The port number.(I use 132, but you can use any valid port you like)
+The maximum number of players you expect to be playing this can be changed later
+The maximum number of IT players(Games i have ran have used up to 3, You might just need 1)
+The maximum number of Connections to the server at once(I would set this to half your expected max player count)
+
+If you are not hooked directly up to your modem then you need to configure port forwarding on your router. If you don't know how to please ask google.
+You will need then need to ask the magical google what your IP Address is.
+
+Follow the instructions for players joining a server use the login below and come back here to finish
+Your Username: Admin
+You Pin: 0000(I would change this once your loggedin)
+
+Assuming the app is open switch to the "Server Admin" tab
+Select your server
+To add Players: under "Add User:" type the username in and hit add
+To manage players: Under "Players:" select their username
+
+User Statuses:
+Is Active: On - User can connect to the server, Be tagged, tag, or anything else. Off - User cannot connect to the server, Be tagged, tag, or anything else.
+It Status: On - Player is IT, Off - Player it not IT.
+Can Add Players: On - User can add players to the game
+Can Remove Players: On - User can remove players from the game
+Is Admin: On - User can make other players admin, set other players statuses, reset any players pin
+
+
+Players Joining A Server:
+Open the app should be called Tagg
+
+Open the Settings Tab at the top of the app
+
+Under "Server Settings:"
+In the first textbox enter: The Server Address:Port Number
+In the next textbox enter your username
+Under "Pin : " you will enter 1234 this is the default pin
+
+Scroll down if needed and hit the "add server" button near the bottom
+Then Hit apply
+
+If you see a message saying Sign In Success and/or Changes Saved then your done for now until your tagged

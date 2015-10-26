@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\moddi_000\Desktop\Tag\res" >
+            <file
+                name="ic_launcher"
+                path="C:\Users\moddi_000\Desktop\Tag\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\moddi_000\Desktop\Tag\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\moddi_000\Desktop\Tag\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\moddi_000\Desktop\Tag\res\drawable-xxhdpi\ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="activity_about"
+                path="C:\Users\moddi_000\Desktop\Tag\res\layout\activity_about.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_debug"
+                path="C:\Users\moddi_000\Desktop\Tag\res\layout\activity_debug.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_main"
+                path="C:\Users\moddi_000\Desktop\Tag\res\layout\activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_scan"
+                path="C:\Users\moddi_000\Desktop\Tag\res\layout\activity_scan.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_server_admin"
+                path="C:\Users\moddi_000\Desktop\Tag\res\layout\activity_server_admin.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_settings"
+                path="C:\Users\moddi_000\Desktop\Tag\res\layout\activity_settings.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="about"
+                path="C:\Users\moddi_000\Desktop\Tag\res\menu\about.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="add_player"
+                path="C:\Users\moddi_000\Desktop\Tag\res\menu\add_player.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="devices"
+                path="C:\Users\moddi_000\Desktop\Tag\res\menu\devices.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="main"
+                path="C:\Users\moddi_000\Desktop\Tag\res\menu\main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="scan"
+                path="C:\Users\moddi_000\Desktop\Tag\res\menu\scan.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="server_admin"
+                path="C:\Users\moddi_000\Desktop\Tag\res\menu\server_admin.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="settings"
+                path="C:\Users\moddi_000\Desktop\Tag\res\menu\settings.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="defaulttone"
+                path="C:\Users\moddi_000\Desktop\Tag\res\raw\defaulttone.mp3"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="scantone"
+                path="C:\Users\moddi_000\Desktop\Tag\res\raw\scantone.mp3"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="taggconsoleserver"
+                path="C:\Users\moddi_000\Desktop\Tag\res\raw\taggconsoleserver.exe"
+                qualifiers=""
+                type="raw" />
+            <file
+                path="C:\Users\moddi_000\Desktop\Tag\res\values\analytics.xml"
+                qualifiers="" >
+                <bool name="ga_autoActivityTracking" >
+true
+                </bool>
+
+                <string name="ga_trackingId" >UA-45105773-1
+                </string>
+
+                <bool name="ga_reportUncaughtExceptions" >
+true
+                </bool>
+            </file>
+            <file
+                path="C:\Users\moddi_000\Desktop\Tag\res\values\dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\moddi_000\Desktop\Tag\res\values\strings.xml"
+                qualifiers="" >
+                <string name="title_activity_settings" >Settings
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="title_activity_debug" >Debug
+                </string>
+                <string name="title_activity_devices" >Devices
+                </string>
+                <string name="app_name" >Tag
+                </string>
+                <string name="title_activity_add_player" >AddPlayer
+                </string>
+                <string name="title_activity_scan" >Scan
+                </string>
+                <string name="title_activity_server_admin" >ServerAdmin
+                </string>
+                <string name="title_activity_about" >About
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+            </file>
+            <file
+                path="C:\Users\moddi_000\Desktop\Tag\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\moddi_000\Desktop\Tag\res\values-sw720dp-land\dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\moddi_000\Desktop\Tag\res\values-v11\styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\moddi_000\Desktop\Tag\res\values-v14\styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+        </source>
+        <source path="C:\Users\moddi_000\Desktop\Tag\build\res\rs\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\moddi_000\Desktop\Tag\build-types\debug\res" />
+    </dataSet>
+
+</merger>
